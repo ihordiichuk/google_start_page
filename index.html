@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Google Homepage</title>
+    <style>
+        body {
+            background-color: #202124; /* Google's dark background color */
+            font-family: Arial, sans-serif; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        img {
+            width: 300px; /* Adjust size as needed */
+        }
+
+        input[type="text"] {
+            width: 400px; 
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px; 
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #303134; 
+            color: #f1f3f4;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="google_logo.png" alt="Google Logo"> 
+
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" name="q" placeholder="Search Google or type a URL">
+            <div>
+                <button type="submit">Google Search</button>
+                <button type="submit" name="btnI" value="I'm Feeling Lucky">I'm Feeling Lucky</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
